@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* لون خلفية أفتح */
+    color: #495057; /* لون نص أغمق قليلاً */
+    direction: rtl;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    border-radius: 10px; /* حواف أكثر استدارة */
+    overflow: hidden;
+}
+
+header {
+    padding: 20px;
+    background-color: #343a40; /* لون خلفية رأس الصفحة أغمق */
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* حجم خط أكبر */
+    font-weight: bold; /* خط عريض */
+}
+
+nav.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #495057; /* لون خلفية التابات */
+}
+
+.tab-button {
+    flex: 1;
+    padding: 15px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em; /* حجم خط أكبر */
+    text-align: center;
+}
+
+.tab-button i {
+    margin-left: 5px;
+}
+
+.tab-button.active {
+    background-color: #212529; /* لون خلفية التاب النشط */
+}
+
+.tab-button:hover {
+    background-color: #52606e;
+}
+
+.tab-content-container {
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.card {
+    background-color: #fff;
+    padding: 25px; /* مساحة أكبر داخل البطاقة */
+    border-radius: 10px; /* حواف أكثر استدارة */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07); /* ظل أكثر وضوحًا */
+}
+
+.card h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: bold; /* عنوان عريض */
+    font-size: 1.5em; /* حجم خط أكبر */
+}
+
+.card h2 i {
+    margin-left: 5px;
+    color: #3498db;
+}
+
+.card ul, .card ol {
+    padding-right: 25px; /* مسافة أكبر للقوائم */
+    line-height: 1.8;
+}
+
+.card li {
+    margin-bottom: 12px;
+}
+
+.card li strong {
+    font-weight: bold; /* خط عريض للكلمات الهامة في القائمة */
+}
+
+.card p strong {
+   font-weight: bold; /* خط عريض للكلمات الهامة في الفقرة */
+    color: #343a40;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6; /* حدود الجدول */
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #dee2e6; /* حدود الخلايا */
+    text-align: center;
+}
+
+th {
+    background-color: #e9ecef; /* لون خلفية رؤوس الجدول */
+    font-weight: bold; /* رؤوس الجدول عريضة */
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 1.3em;
+    }
+}
